@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future | Education for Everyone</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f8ff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #073b75;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-size: 15px;
+        }
+
+        .hero {
+            min-height: 480px;
+            padding: 90px 7%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(
+                120deg, #073b75, #1685cf
+            );
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffca28;
+            color: #073b75;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 7%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #073b75;
+            margin-bottom: 25px;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        .courses {
+            background: #eaf3ff;
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .course-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000012;
+        }
+
+        .course-card h3 {
+            color: #0875bd;
+            margin-bottom: 12px;
+        }
+
+        .contact {
+            background: white;
+        }
+
+        .contact p {
+            margin: 12px;
+            font-size: 17px;
+        }
+
+        footer {
+            background: #073b75;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero {
+                padding: 65px 7%;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>🌟 Bright Future</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Bright Future</h1>
+
+            <p>
+                Education is the key to success.
+                Learn, Grow and Build a Better Future
+                with us.
+            </p>
+
+            <a href="#contact" class="btn">
+                Join Us Today
+            </a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">About Us</h2>
+
+        <p>
+            Bright Future is dedicated to providing
+            quality education and helping students
+            achieve their dreams. Our mission is to
+            inspire young minds, develop skills and
+            create a brighter tomorrow.
+        </p>
+    </section>
+
+    <section class="courses" id="courses">
+        <h2 class="section-title">Our Courses</h2>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <h3>📚 Academic Education</h3>
+                <p>Build strong foundations and improve
+                your academic knowledge.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>💻 Computer Skills</h3>
+                <p>Learn digital skills and prepare
+                yourself for the future.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>🎯 Skill Development</h3>
+                <p>Develop communication, creativity
+                and practical skills.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <p>📍 Address: Your City, India</p>
+        <p>📞 Phone: +91 XXXXXXXXXX</p>
+        <p>✉️ Email: brightfuture@example.com</p>
+
+        <a href="mailto:brightfuture@example.com"
+           class="btn">
+            Email Us
+        </a>
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Bright Future.
+            All Rights Reserved.
+        </p>
+        <p>Learn Today, Lead Tomorrow 🌟</p>
+    </footer>
+
+</body>
+</html>
